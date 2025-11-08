@@ -23,6 +23,8 @@ public class SecurityConfig {
                         .requestMatchers("/api/resume/download").permitAll()
                         .requestMatchers("/api/jobs/match").permitAll()
                         .requestMatchers("/api/jobs/health").permitAll()
+                        .requestMatchers("/api/resume/generate-pdf").permitAll()
+                        .requestMatchers("/api/resume/templates").permitAll()
                         .requestMatchers("/error").permitAll() // Allow error page
                         .anyRequest().authenticated() // Require auth for other endpoints
                 );
