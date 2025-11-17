@@ -30,6 +30,6 @@ public interface TemplateRepository extends JpaRepository<Template, Long> {
      * Custom query to get templates with minimal data (for listing)
      */
     @Query("SELECT new com.inn.automate.POJO.Template(t.templateId, t.name, t.description, null, t.previewImageUrl, t.isActive, null, null) " +
-            "FROM Template t WHERE t.isActive = true ORDER BY t.createdAt DESC")
+            "FROM Template t WHERE t.isActive = true")
     List<Template> findAllActiveTemplatesMinimal();
 }
