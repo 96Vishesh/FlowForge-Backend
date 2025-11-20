@@ -32,7 +32,7 @@ public class TransformedResume {
     @Column(name = "job_description", columnDefinition = "TEXT")
     private String jobDescription;
 
-    @Column(name = "transformed_data", nullable = false, columnDefinition = "TEXT")
+    @Column(name = "transformed_data", nullable = false, columnDefinition = "LONGTEXT")
     private String transformedData;  // JSON string
 
     @Column(name = "created_at", nullable = false, updatable = false)

@@ -47,6 +47,15 @@ public class ResumeData {
         private String endDate;
         private List<String> responsibilities;
         private List<String> achievements;
+        private String duration;
+
+        public String getDuration() {
+            return duration;
+        }
+
+        public void setDuration(String duration) {
+            this.duration = duration;
+        }
     }
 
     @Data
@@ -61,6 +70,15 @@ public class ResumeData {
         private String endDate;
         private String graduationDate;
         private String gpa;
+        private String year;
+
+        public String getYear() {
+            return year;
+        }
+
+        public void setYear(String year) {
+            this.year = year;
+        }
     }
 
     @Data
